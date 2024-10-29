@@ -12,6 +12,6 @@ public class simpleController {
     public String hello() {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes())
                 .getRequest();
-        return request.getRemoteAddr();
+        return request.getRemoteAddr() + "is now the IP Address";
     }
 }
